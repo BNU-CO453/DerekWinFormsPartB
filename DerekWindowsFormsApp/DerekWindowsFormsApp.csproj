@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="U1_DataEntryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="U1_DataEntryForm.Designer.cs">
+      <DependentUpon>U1_DataEntryForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="U1_WelcomeForm.cs">
       <SubType>Form</SubType>
     </Compile>
