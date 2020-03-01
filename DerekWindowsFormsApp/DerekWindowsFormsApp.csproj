@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="U1_CalculatorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="U1_CalculatorForm.Designer.cs">
+      <DependentUpon>U1_CalculatorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="U1_SplashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="U1_SplashForm.Designer.cs">
+      <DependentUpon>U1_SplashForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="U1_DataEntryForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +72,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="U1_SplashForm.resx">
+      <DependentUpon>U1_SplashForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="U1_WelcomeForm.resx">
       <DependentUpon>U1_WelcomeForm.cs</DependentUpon>
     </EmbeddedResource>
