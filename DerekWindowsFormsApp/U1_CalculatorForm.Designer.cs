@@ -138,8 +138,10 @@
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(122, 37);
             this.addButton.TabIndex = 10;
+            this.addButton.Tag = "+";
             this.addButton.Text = "Add";
             this.addButton.UseVisualStyleBackColor = true;
+            this.addButton.Click += new System.EventHandler(this.Calculate);
             // 
             // subtractButton
             // 
@@ -147,8 +149,10 @@
             this.subtractButton.Name = "subtractButton";
             this.subtractButton.Size = new System.Drawing.Size(122, 37);
             this.subtractButton.TabIndex = 11;
+            this.subtractButton.Tag = "-";
             this.subtractButton.Text = "Subtract";
             this.subtractButton.UseVisualStyleBackColor = true;
+            this.subtractButton.Click += new System.EventHandler(this.Calculate);
             // 
             // multiplyButton
             // 
@@ -156,8 +160,10 @@
             this.multiplyButton.Name = "multiplyButton";
             this.multiplyButton.Size = new System.Drawing.Size(122, 37);
             this.multiplyButton.TabIndex = 12;
+            this.multiplyButton.Tag = "*";
             this.multiplyButton.Text = "Multiply";
             this.multiplyButton.UseVisualStyleBackColor = true;
+            this.multiplyButton.Click += new System.EventHandler(this.Calculate);
             // 
             // divideButton
             // 
@@ -165,8 +171,10 @@
             this.divideButton.Name = "divideButton";
             this.divideButton.Size = new System.Drawing.Size(122, 37);
             this.divideButton.TabIndex = 13;
+            this.divideButton.Tag = "/";
             this.divideButton.Text = "Divide";
             this.divideButton.UseVisualStyleBackColor = true;
+            this.divideButton.Click += new System.EventHandler(this.Calculate);
             // 
             // U1_CalculatorForm
             // 
@@ -189,7 +197,7 @@
             this.Controls.Add(this.linePanel);
             this.Controls.Add(this.titleLabel);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "U1_CalculatorForm";
             this.Text = "U1_CalculatorForm";
             this.ResumeLayout(false);

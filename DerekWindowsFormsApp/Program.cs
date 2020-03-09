@@ -16,7 +16,7 @@ namespace DerekWindowsFormsApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new U1_DataEntryForm());
+            Application.Run(new U1_CalculatorForm());
         }
     }
 }
