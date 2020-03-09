@@ -72,6 +72,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="U1_DataEntryForm.resx">
+      <DependentUpon>U1_DataEntryForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="U1_SplashForm.resx">
       <DependentUpon>U1_SplashForm.cs</DependentUpon>
     </EmbeddedResource>
