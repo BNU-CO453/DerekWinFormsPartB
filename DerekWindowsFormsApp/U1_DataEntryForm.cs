@@ -16,5 +16,23 @@ namespace DerekWindowsFormsApp
         {
             InitializeComponent();
         }
+
+        private void messageButton_Click(object sender, EventArgs e)
+        {
+            messageLabel.Text = "Hi " + firstNameTextBox.Text + " " +
+                lastNameTextBox.Text + "\nHappy Programming";
+
+            messageLabel.Text = messageLabel.Text.ToUpper();
+        }
+
+        private void clearButton_Click(object sender, EventArgs e)
+        {
+            messageLabel.Text = "";
+        }
+
+        private void closeButton_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
