@@ -20,7 +20,8 @@ namespace DerekWindowsFormsApp
         private void messageButton_Click(object sender, EventArgs e)
         {
             messageLabel.Text = "Hi " + firstNameTextBox.Text + " " +
-                lastNameTextBox.Text + "\nHappy Programming";
+                lastNameTextBox.Text + "\nHappy Programming" + 
+                "\n Get to it " + firstNameTextBox.Text;
 
             messageLabel.Text = messageLabel.Text.ToUpper();
         }
@@ -33,6 +34,12 @@ namespace DerekWindowsFormsApp
         private void closeButton_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void changeButton_Click(object sender, EventArgs e)
+        {
+            BackColor = Color.Purple;
+            firstNameTextBox.BackColor = Color.LightGreen;
         }
     }
 }
