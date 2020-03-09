@@ -46,6 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Game\GameUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game\GameUI.Designer.cs">
+      <DependentUpon>GameUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game\RPS_Game.cs" />
     <Compile Include="U1_CalculatorForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +79,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Game\GameUI.resx">
+      <DependentUpon>GameUI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="U1_CalculatorForm.resx">
       <DependentUpon>U1_CalculatorForm.cs</DependentUpon>
     </EmbeddedResource>
