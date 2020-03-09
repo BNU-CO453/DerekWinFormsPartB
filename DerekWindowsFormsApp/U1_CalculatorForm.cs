@@ -79,5 +79,13 @@ namespace DerekWindowsFormsApp
         {
 
         }
+
+        private void U1_CalculatorForm_Load(object sender, EventArgs e)
+        {
+            U1_SplashForm splash = new U1_SplashForm();
+            splash.ShowDialog();
+            System.Threading.Thread.Sleep(2000);
+            splash.Close();
+        }
     }
 }

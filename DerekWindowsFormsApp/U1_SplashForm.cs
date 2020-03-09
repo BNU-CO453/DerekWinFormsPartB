@@ -16,5 +16,10 @@ namespace DerekWindowsFormsApp
         {
             InitializeComponent();
         }
+
+        private void U1_SplashForm_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

@@ -200,6 +200,7 @@
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "U1_CalculatorForm";
             this.Text = "U1_CalculatorForm";
+            this.Load += new System.EventHandler(this.U1_CalculatorForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
