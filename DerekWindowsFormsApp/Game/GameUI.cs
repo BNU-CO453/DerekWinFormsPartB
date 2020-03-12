@@ -14,6 +14,7 @@ namespace DerekWindowsFormsApp.Game
         public GameUI()
         {
             InitializeComponent();
+            //RPS_Game game = new RPS_Game();
             RPS_Game.Start();
         }
 
