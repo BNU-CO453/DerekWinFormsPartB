@@ -117,6 +117,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\Debug\Paper.jpg" />
+    <Content Include="bin\Debug\Rock.jpg" />
+    <Content Include="bin\Debug\RPS.jpg" />
+    <Content Include="bin\Debug\Scissors.jpg" />
     <Content Include="Images\Paper.jpg" />
     <Content Include="Images\Rock.jpg" />
     <Content Include="Images\RPS.jpg" />

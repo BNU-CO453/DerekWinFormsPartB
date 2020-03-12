@@ -1,15 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DerekWindowsFormsApp.Game
 {
+    /// <summary>
+    /// This class forms a user interface for the 
+    /// Rock-Paper-Scissors Game
+    /// Author: Derek Peacock
+    /// </summary>
     public partial class GameUI : Form
     {
         public GameUI()
@@ -18,27 +17,27 @@ namespace DerekWindowsFormsApp.Game
             RPS_Game.Start();
         }
 
-        private void closeButton_Click(object sender, EventArgs e)
+        private void CloseForm(object sender, EventArgs e)
         {
             Close();
         }
 
-        private void rockRadioButton_CheckedChanged(object sender, EventArgs e)
+        private void loadRockImage(object sender, EventArgs e)
         {
             userPictureBox.Image = Image.FromFile("Rock.jpg");
         }
 
-        private void paperRadioButton_CheckedChanged(object sender, EventArgs e)
+        private void loadPaperImage(object sender, EventArgs e)
         {
             userPictureBox.Image = Image.FromFile("Paper.jpg");
         }
 
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        private void loadScissorsImage(object sender, EventArgs e)
         {
             userPictureBox.Image = Image.FromFile("Scissors.jpg");
         }
 
-        private void playButton_Click(object sender, EventArgs e)
+        private void getPlayerChoice(object sender, EventArgs e)
         {
 
             if (rockRadioButton.Checked)
