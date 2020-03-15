@@ -125,6 +125,11 @@
     <Content Include="Images\Rock.jpg" />
     <Content Include="Images\RPS.jpg" />
     <Content Include="Images\Scissors.jpg" />
+    <Content Include="ScreenShots\T14_1.jpg" />
+    <Content Include="ScreenShots\T14_2.jpg" />
+    <Content Include="ScreenShots\T14_3.jpg" />
+    <Content Include="ScreenShots\T14_4.jpg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

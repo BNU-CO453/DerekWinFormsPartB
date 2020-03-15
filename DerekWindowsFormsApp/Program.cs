@@ -17,7 +17,7 @@ namespace DerekWindowsFormsApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GameUI());
+            Application.Run(new U1_DataEntryForm());
         }
     }
 }

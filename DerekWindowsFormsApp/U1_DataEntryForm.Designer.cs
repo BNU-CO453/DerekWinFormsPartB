@@ -97,7 +97,7 @@
             this.messageButton.TabIndex = 6;
             this.messageButton.Text = "Message";
             this.messageButton.UseVisualStyleBackColor = true;
-            this.messageButton.Click += new System.EventHandler(this.messageButton_Click);
+            this.messageButton.Click += new System.EventHandler(this.showMessage);
             // 
             // clearButton
             // 
@@ -107,7 +107,7 @@
             this.clearButton.TabIndex = 7;
             this.clearButton.Text = "Clear";
             this.clearButton.UseVisualStyleBackColor = true;
-            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
+            this.clearButton.Click += new System.EventHandler(this.clearMessage);
             // 
             // closeButton
             // 
@@ -117,7 +117,7 @@
             this.closeButton.TabIndex = 8;
             this.closeButton.Text = "&Close";
             this.closeButton.UseVisualStyleBackColor = true;
-            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
+            this.closeButton.Click += new System.EventHandler(this.closeForm);
             // 
             // messageLabel
             // 
@@ -154,7 +154,7 @@
             this.changeButton.TabIndex = 12;
             this.changeButton.Text = "Change";
             this.changeButton.UseVisualStyleBackColor = true;
-            this.changeButton.Click += new System.EventHandler(this.changeButton_Click);
+            this.changeButton.Click += new System.EventHandler(this.changeMessage);
             // 
             // U1_DataEntryForm
             // 
@@ -175,9 +175,9 @@
             this.Controls.Add(this.firstNameLabel);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "U1_DataEntryForm";
-            this.Text = "U1_DataEntryForm";
+            this.Text = "Derek\'s Data Entry Form";
             this.ResumeLayout(false);
             this.PerformLayout();
 

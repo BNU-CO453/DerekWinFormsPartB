@@ -1,15 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DerekWindowsFormsApp
 {
+    /// <summary>
+    /// This form demonstrates simple data entry using text boxes
+    /// and buttons
+    /// Author: Derek
+    /// </summary>
     public partial class U1_DataEntryForm : Form
     {
         public U1_DataEntryForm()
@@ -17,7 +18,7 @@ namespace DerekWindowsFormsApp
             InitializeComponent();
         }
 
-        private void messageButton_Click(object sender, EventArgs e)
+        private void showMessage(object sender, EventArgs e)
         {
             messageLabel.Text = "Hi " + firstNameTextBox.Text + " " +
                 lastNameTextBox.Text + "\nHappy Programming" + 
@@ -26,17 +27,17 @@ namespace DerekWindowsFormsApp
             messageLabel.Text = messageLabel.Text.ToUpper();
         }
 
-        private void clearButton_Click(object sender, EventArgs e)
+        private void clearMessage(object sender, EventArgs e)
         {
             messageLabel.Text = "";
         }
 
-        private void closeButton_Click(object sender, EventArgs e)
+        private void closeForm(object sender, EventArgs e)
         {
             Close();
         }
 
-        private void changeButton_Click(object sender, EventArgs e)
+        private void changeMessage(object sender, EventArgs e)
         {
             BackColor = Color.Purple;
             firstNameTextBox.BackColor = Color.LightGreen;
