@@ -154,6 +154,7 @@
     <Content Include="bin\Debug\Rock.jpg" />
     <Content Include="bin\Debug\RPS.jpg" />
     <Content Include="bin\Debug\Scissors.jpg" />
+    <Content Include="Images\monkey.wmf" />
     <Content Include="Images\Paper.jpg" />
     <Content Include="Images\Rock.jpg" />
     <Content Include="Images\RPS.jpg" />
@@ -164,6 +165,7 @@
     <Content Include="ScreenShots\T14_3.jpg" />
     <Content Include="ScreenShots\T14_4.jpg" />
     <Content Include="ScreenShots\T31_1.jpg" />
+    <Content Include="ScreenShots\T34_1.jpg" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
