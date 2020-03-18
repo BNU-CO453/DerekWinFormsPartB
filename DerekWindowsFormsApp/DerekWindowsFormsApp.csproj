@@ -144,6 +144,7 @@
     <Content Include="ScreenShots\T14_2.jpg" />
     <Content Include="ScreenShots\T14_3.jpg" />
     <Content Include="ScreenShots\T14_4.jpg" />
+    <Content Include="ScreenShots\T31_1.jpg" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

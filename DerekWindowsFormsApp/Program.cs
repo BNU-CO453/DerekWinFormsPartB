@@ -19,7 +19,7 @@ namespace DerekWindowsFormsApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CalculatorForm());
+            Application.Run(new CurrencyForm());
         }
     }
 }

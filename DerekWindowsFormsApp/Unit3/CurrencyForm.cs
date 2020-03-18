@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DerekWindowsFormsApp.Unit3
@@ -29,7 +22,13 @@ namespace DerekWindowsFormsApp.Unit3
 
         private void closeForm(object sender, EventArgs e)
         {
-            Close();
+            DialogResult result = MessageBox.Show(
+                "Are your sure?","Close Form", MessageBoxButtons.YesNo);
+
+            if(result == DialogResult.Yes)
+            {
+                Close();
+            }
         }
 
         private void calculateDollars(object sender, EventArgs e)
