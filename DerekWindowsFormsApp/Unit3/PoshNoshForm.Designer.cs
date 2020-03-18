@@ -35,9 +35,12 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.costLabel = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.desertComboBox = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -102,12 +105,33 @@
             this.costLabel.TabIndex = 0;
             this.costLabel.Text = "£ 0.00";
             // 
+            // groupBox3
+            // 
+            this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.groupBox3.Controls.Add(this.desertComboBox);
+            this.groupBox3.Location = new System.Drawing.Point(30, 401);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(284, 100);
+            this.groupBox3.TabIndex = 5;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Deserts";
+            // 
+            // desertComboBox
+            // 
+            this.desertComboBox.FormattingEnabled = true;
+            this.desertComboBox.Location = new System.Drawing.Point(12, 41);
+            this.desertComboBox.Name = "desertComboBox";
+            this.desertComboBox.Size = new System.Drawing.Size(256, 33);
+            this.desertComboBox.TabIndex = 0;
+            this.desertComboBox.SelectedIndexChanged += new System.EventHandler(this.selectDesert);
+            // 
             // PoshNoshForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(744, 588);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.closeButton);
@@ -120,6 +144,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -132,5 +157,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label costLabel;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.ComboBox desertComboBox;
     }
 }
