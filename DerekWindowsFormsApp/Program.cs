@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DerekWindowsFormsApp.Game;
+using DerekWindowsFormsApp.Unit3;
 
 namespace DerekWindowsFormsApp
 {
@@ -17,7 +18,7 @@ namespace DerekWindowsFormsApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new U1_DataEntryForm());
+            Application.Run(new CurrencyForm());
         }
     }
 }
