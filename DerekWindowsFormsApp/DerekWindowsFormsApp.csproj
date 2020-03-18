@@ -91,6 +91,12 @@
     <Compile Include="Unit3\CurrencyForm.Designer.cs">
       <DependentUpon>CurrencyForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Unit3\PizzaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Unit3\PizzaForm.Designer.cs">
+      <DependentUpon>PizzaForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Game\GameUI.resx">
       <DependentUpon>GameUI.cs</DependentUpon>
     </EmbeddedResource>
@@ -117,6 +123,9 @@
     </Compile>
     <EmbeddedResource Include="Unit3\CurrencyForm.resx">
       <DependentUpon>CurrencyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Unit3\PizzaForm.resx">
+      <DependentUpon>PizzaForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
