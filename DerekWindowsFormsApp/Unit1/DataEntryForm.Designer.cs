@@ -1,6 +1,6 @@
 ﻿namespace DerekWindowsFormsApp
 {
-    partial class U1_DataEntryForm
+    partial class DataEntryForm
     {
         /// <summary>
         /// Required designer variable.

@@ -1,6 +1,6 @@
 ﻿namespace DerekWindowsFormsApp
 {
-    partial class U1_CalculatorForm
+    partial class CalculatorForm
     {
         /// <summary>
         /// Required designer variable.
@@ -130,7 +130,7 @@
             this.closeButton.TabIndex = 9;
             this.closeButton.Text = "Close";
             this.closeButton.UseVisualStyleBackColor = true;
-            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
+            this.closeButton.Click += new System.EventHandler(this.closeForm);
             // 
             // addButton
             // 
@@ -200,7 +200,7 @@
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "U1_CalculatorForm";
             this.Text = "U1_CalculatorForm";
-            this.Load += new System.EventHandler(this.U1_CalculatorForm_Load);
+            this.Load += new System.EventHandler(this.showSplashForm);
             this.ResumeLayout(false);
             this.PerformLayout();
 

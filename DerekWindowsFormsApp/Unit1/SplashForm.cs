@@ -10,14 +10,19 @@ using System.Windows.Forms;
 
 namespace DerekWindowsFormsApp
 {
-    public partial class U1_SplashForm : Form
+    /// <summary>
+    /// Task 1.6
+    /// This shows an image to introduce an application
+    /// Author: Derek
+    /// </summary>
+    public partial class SplashForm : Form
     {
-        public U1_SplashForm()
+        public SplashForm()
         {
             InitializeComponent();
         }
 
-        private void U1_SplashForm_Click(object sender, EventArgs e)
+        private void CloseForm(object sender, EventArgs e)
         {
             Close();
         }

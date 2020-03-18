@@ -1,6 +1,6 @@
 ﻿namespace DerekWindowsFormsApp
 {
-    partial class U1_SplashForm
+    partial class SplashForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(U1_SplashForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SplashForm));
             this.clickLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -56,7 +56,7 @@
             this.Name = "U1_SplashForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Derek\'s SplashForm";
-            this.Click += new System.EventHandler(this.U1_SplashForm_Click);
+            this.Click += new System.EventHandler(this.CloseForm);
             this.ResumeLayout(false);
             this.PerformLayout();
 

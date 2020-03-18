@@ -11,6 +11,7 @@ using System.Windows.Forms;
 namespace DerekWindowsFormsApp.Unit3
 {
     /// <summary>
+    /// Task 3.1
     /// This class can convert UK pounds into the equivalent amount
     /// in euros, dollars or rupees
     /// Author: Derek

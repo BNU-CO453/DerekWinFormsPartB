@@ -1,6 +1,6 @@
 ﻿namespace DerekWindowsFormsApp
 {
-    partial class U1_WelcomeForm
+    partial class WelcomeForm
     {
         /// <summary>
         /// Required designer variable.
@@ -69,7 +69,7 @@
             this.computerButton.TabIndex = 2;
             this.computerButton.Text = "Best Computer";
             this.computerButton.UseVisualStyleBackColor = true;
-            this.computerButton.Click += new System.EventHandler(this.computerButton_Click);
+            this.computerButton.Click += new System.EventHandler(this.ShowBestComputer);
             // 
             // softwareButton
             // 
@@ -79,7 +79,7 @@
             this.softwareButton.TabIndex = 3;
             this.softwareButton.Text = "Best Software";
             this.softwareButton.UseVisualStyleBackColor = true;
-            this.softwareButton.Click += new System.EventHandler(this.softwareButton_Click);
+            this.softwareButton.Click += new System.EventHandler(this.showBestSoftware);
             // 
             // quitButton
             // 
@@ -89,9 +89,9 @@
             this.quitButton.TabIndex = 4;
             this.quitButton.Text = "Quit";
             this.quitButton.UseVisualStyleBackColor = true;
-            this.quitButton.Click += new System.EventHandler(this.quitButton_Click);
+            this.quitButton.Click += new System.EventHandler(this.exitForm);
             // 
-            // U1_WelcomeForm
+            // WelcomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -104,10 +104,10 @@
             this.Controls.Add(this.titleLabel);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.Name = "U1_WelcomeForm";
+            this.Margin = new System.Windows.Forms.Padding(6);
+            this.Name = "WelcomeForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Derek Task 1.1 to 1.5";
+            this.Text = "Derek Task 1.1 to 1.3";
             this.ResumeLayout(false);
 
         }

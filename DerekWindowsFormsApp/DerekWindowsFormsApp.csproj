@@ -53,32 +53,38 @@
       <DependentUpon>GameUI.cs</DependentUpon>
     </Compile>
     <Compile Include="Game\RPS_Game.cs" />
-    <Compile Include="U1_CalculatorForm.cs">
+    <Compile Include="Unit1\CalculatorForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="U1_CalculatorForm.Designer.cs">
-      <DependentUpon>U1_CalculatorForm.cs</DependentUpon>
+    <Compile Include="Unit1\CalculatorForm.Designer.cs">
+      <DependentUpon>CalculatorForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="U1_SplashForm.cs">
+    <Compile Include="Unit1\SplashForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="U1_SplashForm.Designer.cs">
-      <DependentUpon>U1_SplashForm.cs</DependentUpon>
+    <Compile Include="Unit1\SplashForm.Designer.cs">
+      <DependentUpon>SplashForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="U1_DataEntryForm.cs">
+    <Compile Include="Unit1\DataEntryForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="U1_DataEntryForm.Designer.cs">
-      <DependentUpon>U1_DataEntryForm.cs</DependentUpon>
+    <Compile Include="Unit1\DataEntryForm.Designer.cs">
+      <DependentUpon>DataEntryForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="U1_WelcomeForm.cs">
+    <Compile Include="Unit1\WelcomeForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="U1_WelcomeForm.Designer.cs">
-      <DependentUpon>U1_WelcomeForm.cs</DependentUpon>
+    <Compile Include="Unit1\WelcomeForm.Designer.cs">
+      <DependentUpon>WelcomeForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Unit1\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Unit1\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Unit3\CurrencyForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,17 +94,17 @@
     <EmbeddedResource Include="Game\GameUI.resx">
       <DependentUpon>GameUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="U1_CalculatorForm.resx">
-      <DependentUpon>U1_CalculatorForm.cs</DependentUpon>
+    <EmbeddedResource Include="Unit1\CalculatorForm.resx">
+      <DependentUpon>CalculatorForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="U1_DataEntryForm.resx">
-      <DependentUpon>U1_DataEntryForm.cs</DependentUpon>
+    <EmbeddedResource Include="Unit1\DataEntryForm.resx">
+      <DependentUpon>DataEntryForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="U1_SplashForm.resx">
-      <DependentUpon>U1_SplashForm.cs</DependentUpon>
+    <EmbeddedResource Include="Unit1\SplashForm.resx">
+      <DependentUpon>SplashForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="U1_WelcomeForm.resx">
-      <DependentUpon>U1_WelcomeForm.cs</DependentUpon>
+    <EmbeddedResource Include="Unit1\WelcomeForm.resx">
+      <DependentUpon>WelcomeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -1,27 +1,25 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DerekWindowsFormsApp
 {
-    public partial class U1_CalculatorForm : Form
+    /// <summary>
+    /// Task 1.5
+    /// This form offers simple arithmetic operations between two numbers
+    /// Author: Derek
+    /// </summary>
+    public partial class CalculatorForm : Form
     {
         private double number1;
         private double number2;
         private double result;
 
-        public U1_CalculatorForm()
+        public CalculatorForm()
         {
             InitializeComponent();
         }
 
-        private void closeButton_Click(object sender, EventArgs e)
+        private void closeForm(object sender, EventArgs e)
         {
             Close();
         }
@@ -74,9 +72,9 @@ namespace DerekWindowsFormsApp
         }
 
 
-        private void U1_CalculatorForm_Load(object sender, EventArgs e)
+        private void showSplashForm(object sender, EventArgs e)
         {
-            U1_SplashForm splash = new U1_SplashForm();
+            SplashForm splash = new SplashForm();
             splash.ShowDialog();
             System.Threading.Thread.Sleep(2000);
             splash.Close();

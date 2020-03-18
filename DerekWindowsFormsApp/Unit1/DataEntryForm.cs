@@ -7,13 +7,14 @@ using System.Windows.Forms;
 namespace DerekWindowsFormsApp
 {
     /// <summary>
+    /// Task 1.4 
     /// This form demonstrates simple data entry using text boxes
     /// and buttons
     /// Author: Derek
     /// </summary>
-    public partial class U1_DataEntryForm : Form
+    public partial class DataEntryForm : Form
     {
-        public U1_DataEntryForm()
+        public DataEntryForm()
         {
             InitializeComponent();
         }
