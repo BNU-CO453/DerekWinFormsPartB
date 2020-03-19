@@ -16,7 +16,7 @@ namespace DerekWindowsFormsApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MyWordPad());
+            Application.Run(new PadForm());
         }
     }
 }

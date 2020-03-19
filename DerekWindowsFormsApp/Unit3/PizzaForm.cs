@@ -33,6 +33,9 @@ namespace DerekWindowsFormsApp.Unit3
             Close();
         }
 
+        /// <summary>
+        /// This method is called when a radio button is clicked
+        /// </summary>
         private void calculateCost(object sender, EventArgs e)
         {
             baseCost = 0;

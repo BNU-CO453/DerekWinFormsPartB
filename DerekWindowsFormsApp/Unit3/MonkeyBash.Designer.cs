@@ -38,6 +38,7 @@
             this.messageLabel = new System.Windows.Forms.Label();
             this.hitsLabel = new System.Windows.Forms.Label();
             this.gamePanel = new System.Windows.Forms.Panel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.imagePictureBox)).BeginInit();
             this.gamePanel.SuspendLayout();
             this.SuspendLayout();
@@ -153,5 +154,6 @@
         private System.Windows.Forms.Label messageLabel;
         private System.Windows.Forms.Label hitsLabel;
         private System.Windows.Forms.Panel gamePanel;
+        private System.Windows.Forms.Timer timer1;
     }
 }
