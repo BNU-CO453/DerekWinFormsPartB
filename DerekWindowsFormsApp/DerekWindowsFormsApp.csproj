@@ -97,6 +97,12 @@
     <Compile Include="Unit3\MonkeyBash.Designer.cs">
       <DependentUpon>MonkeyBash.cs</DependentUpon>
     </Compile>
+    <Compile Include="Unit3\MyWordPad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Unit3\MyWordPad.Designer.cs">
+      <DependentUpon>MyWordPad.cs</DependentUpon>
+    </Compile>
     <Compile Include="Unit3\PizzaForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +144,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Unit3\MonkeyBash.resx">
       <DependentUpon>MonkeyBash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Unit3\MyWordPad.resx">
+      <DependentUpon>MyWordPad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Unit3\PizzaForm.resx">
       <DependentUpon>PizzaForm.cs</DependentUpon>

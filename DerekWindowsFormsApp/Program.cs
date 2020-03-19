@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using DerekWindowsFormsApp.Game;
 using DerekWindowsFormsApp.Unit3;
@@ -19,7 +16,7 @@ namespace DerekWindowsFormsApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MonkeyBash());
+            Application.Run(new MyWordPad());
         }
     }
 }
