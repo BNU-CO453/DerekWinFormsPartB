@@ -12,7 +12,9 @@ namespace DerekWindowsFormsApp.Unit3
     public partial class MonkeyBash : Form
     {
         private int x, y;
+        
         private int hits, misses;
+
         private Random generator = new Random();
 
         public MonkeyBash()
@@ -28,7 +30,7 @@ namespace DerekWindowsFormsApp.Unit3
         private void imagePictureBox_Click(object sender, EventArgs e)
         {
             //MessageBox.Show("Ouch!");
-            hits++;
+            hits = hits + 1;
         }
 
         private void startTimer(object sender, EventArgs e)
@@ -49,7 +51,7 @@ namespace DerekWindowsFormsApp.Unit3
 
         private void gamePanel_Click(object sender, EventArgs e)
         {
-            misses++;
+            misses = misses + 1;
         }
 
         private void MonkeyBash_Click(object sender, EventArgs e)

@@ -27,5 +27,31 @@ namespace DerekWindowsFormsApp.Unit3
             colorDialog1.ShowDialog();
             richTextBox1.BackColor = colorDialog1.Color;
         }
+
+        private void cutText(object sender, EventArgs e)
+        {
+            richTextBox1.Cut();
+        }
+
+        private void cutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //richTextBox1.Cut();
+        }
+
+        private void pasteText(object sender, EventArgs e)
+        {
+            richTextBox1.Paste();
+        }
+
+        private void changeFont(object sender, EventArgs e)
+        {
+
+        }
+
+        private void backColourToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            colorDialog1.ShowDialog();
+            richTextBox1.BackColor = colorDialog1.Color;
+        }
     }
 }

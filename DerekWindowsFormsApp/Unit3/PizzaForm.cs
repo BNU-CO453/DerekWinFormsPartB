@@ -10,9 +10,14 @@ using System.Windows.Forms;
 
 namespace DerekWindowsFormsApp.Unit3
 {
+    /// <summary>
+    /// Task 3.2
+    /// This class..
+    /// Derek
+    /// </summary>
     public partial class PizzaForm : Form
     {
-        public const decimal LARGE_COST = 10.00m;
+        public const decimal LARGE_COST = 12.00m;
         public const decimal MEDIUM_COST = 8.00m;
         public const decimal SMALL_COST = 6.00m;
 
@@ -25,7 +30,7 @@ namespace DerekWindowsFormsApp.Unit3
         public PizzaForm()
         {
             InitializeComponent();
-            calculateCost(null, null);
+            calculateBaseCost(null, null);
         }
 
         private void closeForm(object sender, EventArgs e)
@@ -36,7 +41,7 @@ namespace DerekWindowsFormsApp.Unit3
         /// <summary>
         /// This method is called when a radio button is clicked
         /// </summary>
-        private void calculateCost(object sender, EventArgs e)
+        private void calculateBaseCost(object sender, EventArgs e)
         {
             baseCost = 0;
 
@@ -57,16 +62,17 @@ namespace DerekWindowsFormsApp.Unit3
         }
 
 
-        private void adjustToppingCost(object sender, EventArgs e)
+        private void calculateToppingCost(object sender, EventArgs e)
         {
-            CheckBox box = (CheckBox)sender;
+            CheckBox box = (CheckBox)sender;  // Type Cast
+
             if(box.Checked)
             {
-                toppingCost += TOPPING_COST;
+                toppingCost = toppingCost + TOPPING_COST;
             }
             else
             {
-                toppingCost -= TOPPING_COST;
+                toppingCost = toppingCost - TOPPING_COST;
             }
 
             displayCost();

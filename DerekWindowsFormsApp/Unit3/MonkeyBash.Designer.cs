@@ -39,6 +39,7 @@
             this.hitsLabel = new System.Windows.Forms.Label();
             this.gamePanel = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.imagePictureBox)).BeginInit();
             this.gamePanel.SuspendLayout();
             this.SuspendLayout();
@@ -115,9 +116,10 @@
             this.gamePanel.Controls.Add(this.imagePictureBox);
             this.gamePanel.Location = new System.Drawing.Point(17, 12);
             this.gamePanel.Name = "gamePanel";
-            this.gamePanel.Size = new System.Drawing.Size(668, 391);
+            this.gamePanel.Size = new System.Drawing.Size(683, 391);
             this.gamePanel.TabIndex = 6;
             this.gamePanel.Click += new System.EventHandler(this.gamePanel_Click);
+            this.gamePanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MonkeyBash_MouseDown);
             // 
             // MonkeyBash
             // 
@@ -155,5 +157,6 @@
         private System.Windows.Forms.Label hitsLabel;
         private System.Windows.Forms.Panel gamePanel;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer2;
     }
 }

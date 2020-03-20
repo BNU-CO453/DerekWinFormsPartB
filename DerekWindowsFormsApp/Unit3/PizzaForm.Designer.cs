@@ -68,7 +68,7 @@
             this.smallRadioButton.TabIndex = 2;
             this.smallRadioButton.Text = "Small";
             this.smallRadioButton.UseVisualStyleBackColor = true;
-            this.smallRadioButton.CheckedChanged += new System.EventHandler(this.calculateCost);
+            this.smallRadioButton.CheckedChanged += new System.EventHandler(this.calculateBaseCost);
             // 
             // mediumRadioButton
             // 
@@ -81,7 +81,7 @@
             this.mediumRadioButton.TabStop = true;
             this.mediumRadioButton.Text = "Medium";
             this.mediumRadioButton.UseVisualStyleBackColor = true;
-            this.mediumRadioButton.CheckedChanged += new System.EventHandler(this.calculateCost);
+            this.mediumRadioButton.CheckedChanged += new System.EventHandler(this.calculateBaseCost);
             // 
             // largeRadioButton
             // 
@@ -92,7 +92,7 @@
             this.largeRadioButton.TabIndex = 0;
             this.largeRadioButton.Text = "Large";
             this.largeRadioButton.UseVisualStyleBackColor = true;
-            this.largeRadioButton.CheckedChanged += new System.EventHandler(this.calculateCost);
+            this.largeRadioButton.CheckedChanged += new System.EventHandler(this.calculateBaseCost);
             // 
             // groupBox2
             // 
@@ -138,7 +138,7 @@
             this.checkBox5.TabIndex = 4;
             this.checkBox5.Text = "Rocket and Basil";
             this.checkBox5.UseVisualStyleBackColor = true;
-            this.checkBox5.CheckedChanged += new System.EventHandler(this.adjustToppingCost);
+            this.checkBox5.CheckedChanged += new System.EventHandler(this.calculateToppingCost);
             // 
             // checkBox4
             // 
@@ -149,7 +149,7 @@
             this.checkBox4.TabIndex = 3;
             this.checkBox4.Text = "Crispy Bacon";
             this.checkBox4.UseVisualStyleBackColor = true;
-            this.checkBox4.CheckedChanged += new System.EventHandler(this.adjustToppingCost);
+            this.checkBox4.CheckedChanged += new System.EventHandler(this.calculateToppingCost);
             // 
             // checkBox3
             // 
@@ -160,7 +160,7 @@
             this.checkBox3.TabIndex = 2;
             this.checkBox3.Text = "Mushrooms";
             this.checkBox3.UseVisualStyleBackColor = true;
-            this.checkBox3.CheckedChanged += new System.EventHandler(this.adjustToppingCost);
+            this.checkBox3.CheckedChanged += new System.EventHandler(this.calculateToppingCost);
             // 
             // checkBox2
             // 
@@ -171,7 +171,7 @@
             this.checkBox2.TabIndex = 1;
             this.checkBox2.Text = "Chilli";
             this.checkBox2.UseVisualStyleBackColor = true;
-            this.checkBox2.CheckedChanged += new System.EventHandler(this.adjustToppingCost);
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.calculateToppingCost);
             // 
             // checkBox1
             // 
@@ -182,7 +182,7 @@
             this.checkBox1.TabIndex = 0;
             this.checkBox1.Text = "Pepperoni and Pepper";
             this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.adjustToppingCost);
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.calculateToppingCost);
             // 
             // closeButton
             // 

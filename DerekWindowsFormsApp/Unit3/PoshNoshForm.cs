@@ -77,7 +77,7 @@ namespace DerekWindowsFormsApp.Unit3
         private void displayCost()
         {
             totalCost = startCost + desertCost;
-            costLabel.Text = totalCost.ToString("0.00");
+            costLabel.Text = totalCost.ToString("£0.00");
         }
     }
 }

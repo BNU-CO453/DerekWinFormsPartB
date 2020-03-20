@@ -16,7 +16,10 @@ namespace DerekWindowsFormsApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            
+            //Application.Run(new MonkeyBash());
             Application.Run(new PadForm());
+
         }
     }
 }

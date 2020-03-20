@@ -59,7 +59,8 @@
             this.starterListBox.FormattingEnabled = true;
             this.starterListBox.ItemHeight = 25;
             this.starterListBox.Items.AddRange(new object[] {
-            "Humous on Toast"});
+            "Soup",
+            "Humous"});
             this.starterListBox.Location = new System.Drawing.Point(12, 31);
             this.starterListBox.Name = "starterListBox";
             this.starterListBox.Size = new System.Drawing.Size(256, 154);
