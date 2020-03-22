@@ -121,6 +121,18 @@
     <Compile Include="Unit3\PoshNoshForm.Designer.cs">
       <DependentUpon>PoshNoshForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Unit4\TipsterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Unit4\TipsterForm.Designer.cs">
+      <DependentUpon>TipsterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Unit4\TipsterResults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Unit4\TipsterResults.Designer.cs">
+      <DependentUpon>TipsterResults.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Game\GameUI.resx">
       <DependentUpon>GameUI.cs</DependentUpon>
     </EmbeddedResource>
@@ -162,6 +174,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Unit3\PoshNoshForm.resx">
       <DependentUpon>PoshNoshForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Unit4\TipsterForm.resx">
+      <DependentUpon>TipsterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Unit4\TipsterResults.resx">
+      <DependentUpon>TipsterResults.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
