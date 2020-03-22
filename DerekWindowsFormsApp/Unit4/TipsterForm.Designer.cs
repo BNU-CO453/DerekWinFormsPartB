@@ -33,11 +33,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.billTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.peopleNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.quitButton = new System.Windows.Forms.Button();
             this.calculateButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.peopleNumericUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -75,23 +75,23 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "People";
             // 
-            // numericUpDown1
+            // peopleNumericUpDown
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(151, 125);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
+            this.peopleNumericUpDown.Location = new System.Drawing.Point(151, 125);
+            this.peopleNumericUpDown.Maximum = new decimal(new int[] {
             6,
             0,
             0,
             0});
-            this.numericUpDown1.Minimum = new decimal(new int[] {
+            this.peopleNumericUpDown.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(100, 32);
-            this.numericUpDown1.TabIndex = 4;
-            this.numericUpDown1.Value = new decimal(new int[] {
+            this.peopleNumericUpDown.Name = "peopleNumericUpDown";
+            this.peopleNumericUpDown.Size = new System.Drawing.Size(100, 32);
+            this.peopleNumericUpDown.TabIndex = 4;
+            this.peopleNumericUpDown.Value = new decimal(new int[] {
             2,
             0,
             0,
@@ -105,6 +105,7 @@
             this.quitButton.TabIndex = 5;
             this.quitButton.Text = "Quit";
             this.quitButton.UseVisualStyleBackColor = true;
+            this.quitButton.Click += new System.EventHandler(this.quitApplication);
             // 
             // calculateButton
             // 
@@ -114,6 +115,7 @@
             this.calculateButton.TabIndex = 6;
             this.calculateButton.Text = "Calculate";
             this.calculateButton.UseVisualStyleBackColor = true;
+            this.calculateButton.Click += new System.EventHandler(this.calculateBill);
             // 
             // TipsterForm
             // 
@@ -122,17 +124,17 @@
             this.ClientSize = new System.Drawing.Size(648, 445);
             this.Controls.Add(this.calculateButton);
             this.Controls.Add(this.quitButton);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.peopleNumericUpDown);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.billTextBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "TipsterForm";
             this.Text = "Derek\'s Tipster Bill Entry";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.peopleNumericUpDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -144,7 +146,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox billTextBox;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown peopleNumericUpDown;
         private System.Windows.Forms.Button quitButton;
         private System.Windows.Forms.Button calculateButton;
     }

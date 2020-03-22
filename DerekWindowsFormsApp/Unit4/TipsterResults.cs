@@ -16,5 +16,10 @@ namespace DerekWindowsFormsApp.Unit4
         {
             InitializeComponent();
         }
+
+        private void closeForm(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

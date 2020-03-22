@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.billTextBox = new System.Windows.Forms.TextBox();
             this.peopleTextBox = new System.Windows.Forms.TextBox();
+            this.billTextBox = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.closeButton = new System.Windows.Forms.Button();
@@ -54,25 +54,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Bill Details";
             // 
-            // label1
+            // peopleTextBox
             // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.DimGray;
-            this.label1.Location = new System.Drawing.Point(27, 44);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 26);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Total Bill";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.DimGray;
-            this.label2.Location = new System.Drawing.Point(27, 83);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 26);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "People";
+            this.peopleTextBox.BackColor = System.Drawing.Color.LightGray;
+            this.peopleTextBox.Enabled = false;
+            this.peopleTextBox.Location = new System.Drawing.Point(173, 80);
+            this.peopleTextBox.Name = "peopleTextBox";
+            this.peopleTextBox.ReadOnly = true;
+            this.peopleTextBox.Size = new System.Drawing.Size(100, 32);
+            this.peopleTextBox.TabIndex = 3;
             // 
             // billTextBox
             // 
@@ -84,15 +74,25 @@
             this.billTextBox.Size = new System.Drawing.Size(100, 32);
             this.billTextBox.TabIndex = 2;
             // 
-            // peopleTextBox
+            // label2
             // 
-            this.peopleTextBox.BackColor = System.Drawing.Color.LightGray;
-            this.peopleTextBox.Enabled = false;
-            this.peopleTextBox.Location = new System.Drawing.Point(173, 80);
-            this.peopleTextBox.Name = "peopleTextBox";
-            this.peopleTextBox.ReadOnly = true;
-            this.peopleTextBox.Size = new System.Drawing.Size(100, 32);
-            this.peopleTextBox.TabIndex = 3;
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.DimGray;
+            this.label2.Location = new System.Drawing.Point(27, 83);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(80, 26);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "People";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.DimGray;
+            this.label1.Location = new System.Drawing.Point(27, 44);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(95, 26);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Total Bill";
             // 
             // label3
             // 
@@ -121,6 +121,7 @@
             this.closeButton.TabIndex = 5;
             this.closeButton.Text = "Close";
             this.closeButton.UseVisualStyleBackColor = true;
+            this.closeButton.Click += new System.EventHandler(this.closeForm);
             // 
             // TipsterResults
             // 
@@ -132,8 +133,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "TipsterResults";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Derek\'s Tipster Results";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -145,12 +147,12 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox peopleTextBox;
-        private System.Windows.Forms.TextBox billTextBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button closeButton;
+        public System.Windows.Forms.TextBox peopleTextBox;
+        public System.Windows.Forms.TextBox billTextBox;
     }
 }

@@ -16,5 +16,20 @@ namespace DerekWindowsFormsApp.Unit4
         {
             InitializeComponent();
         }
+
+        private void quitApplication(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void calculateBill(object sender, EventArgs e)
+        {
+            TipsterResults results = new TipsterResults();
+
+            results.billTextBox.Text = billTextBox.Text;
+            results.peopleTextBox.Text = peopleNumericUpDown.Value.ToString();
+
+            results.Show();
+        }
     }
 }
