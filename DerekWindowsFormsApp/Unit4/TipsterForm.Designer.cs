@@ -36,8 +36,14 @@
             this.peopleNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.quitButton = new System.Windows.Forms.Button();
             this.calculateButton = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.noneRadioButton = new System.Windows.Forms.RadioButton();
+            this.normalRadioButton = new System.Windows.Forms.RadioButton();
+            this.generousRadioButton = new System.Windows.Forms.RadioButton();
+            this.madRadioButton = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.peopleNumericUpDown)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -117,11 +123,67 @@
             this.calculateButton.UseVisualStyleBackColor = true;
             this.calculateButton.Click += new System.EventHandler(this.calculateBill);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.madRadioButton);
+            this.groupBox1.Controls.Add(this.generousRadioButton);
+            this.groupBox1.Controls.Add(this.normalRadioButton);
+            this.groupBox1.Controls.Add(this.noneRadioButton);
+            this.groupBox1.Location = new System.Drawing.Point(39, 220);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(266, 129);
+            this.groupBox1.TabIndex = 7;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Tip";
+            // 
+            // noneRadioButton
+            // 
+            this.noneRadioButton.AutoSize = true;
+            this.noneRadioButton.Location = new System.Drawing.Point(19, 32);
+            this.noneRadioButton.Name = "noneRadioButton";
+            this.noneRadioButton.Size = new System.Drawing.Size(82, 30);
+            this.noneRadioButton.TabIndex = 0;
+            this.noneRadioButton.Text = "None";
+            this.noneRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // normalRadioButton
+            // 
+            this.normalRadioButton.AutoSize = true;
+            this.normalRadioButton.Checked = true;
+            this.normalRadioButton.Location = new System.Drawing.Point(155, 31);
+            this.normalRadioButton.Name = "normalRadioButton";
+            this.normalRadioButton.Size = new System.Drawing.Size(74, 30);
+            this.normalRadioButton.TabIndex = 1;
+            this.normalRadioButton.TabStop = true;
+            this.normalRadioButton.Text = "10%";
+            this.normalRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // generousRadioButton
+            // 
+            this.generousRadioButton.AutoSize = true;
+            this.generousRadioButton.Location = new System.Drawing.Point(19, 82);
+            this.generousRadioButton.Name = "generousRadioButton";
+            this.generousRadioButton.Size = new System.Drawing.Size(74, 30);
+            this.generousRadioButton.TabIndex = 2;
+            this.generousRadioButton.Text = "20%";
+            this.generousRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // madRadioButton
+            // 
+            this.madRadioButton.AutoSize = true;
+            this.madRadioButton.Location = new System.Drawing.Point(155, 82);
+            this.madRadioButton.Name = "madRadioButton";
+            this.madRadioButton.Size = new System.Drawing.Size(72, 30);
+            this.madRadioButton.TabIndex = 3;
+            this.madRadioButton.Text = "Mad";
+            this.madRadioButton.UseVisualStyleBackColor = true;
+            // 
             // TipsterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(648, 445);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.calculateButton);
             this.Controls.Add(this.quitButton);
             this.Controls.Add(this.peopleNumericUpDown);
@@ -135,6 +197,8 @@
             this.Text = "Derek\'s Tipster Bill Entry";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.peopleNumericUpDown)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -149,5 +213,10 @@
         private System.Windows.Forms.NumericUpDown peopleNumericUpDown;
         private System.Windows.Forms.Button quitButton;
         private System.Windows.Forms.Button calculateButton;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.RadioButton madRadioButton;
+        private System.Windows.Forms.RadioButton generousRadioButton;
+        private System.Windows.Forms.RadioButton normalRadioButton;
+        private System.Windows.Forms.RadioButton noneRadioButton;
     }
 }

@@ -36,12 +36,16 @@
             this.label3 = new System.Windows.Forms.Label();
             this.personTextBox = new System.Windows.Forms.TextBox();
             this.closeButton = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.tipTextBox = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.groupBox1.Controls.Add(this.tipTextBox);
+            this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.peopleTextBox);
             this.groupBox1.Controls.Add(this.billTextBox);
             this.groupBox1.Controls.Add(this.label2);
@@ -49,7 +53,7 @@
             this.groupBox1.ForeColor = System.Drawing.Color.Red;
             this.groupBox1.Location = new System.Drawing.Point(13, 13);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(353, 129);
+            this.groupBox1.Size = new System.Drawing.Size(353, 168);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Bill Details";
@@ -97,7 +101,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(23, 200);
+            this.label3.Location = new System.Drawing.Point(23, 234);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(123, 26);
             this.label3.TabIndex = 1;
@@ -107,7 +111,7 @@
             // 
             this.personTextBox.BackColor = System.Drawing.Color.LightGray;
             this.personTextBox.Enabled = false;
-            this.personTextBox.Location = new System.Drawing.Point(186, 197);
+            this.personTextBox.Location = new System.Drawing.Point(186, 231);
             this.personTextBox.Name = "personTextBox";
             this.personTextBox.ReadOnly = true;
             this.personTextBox.Size = new System.Drawing.Size(100, 32);
@@ -115,7 +119,7 @@
             // 
             // closeButton
             // 
-            this.closeButton.Location = new System.Drawing.Point(272, 250);
+            this.closeButton.Location = new System.Drawing.Point(272, 284);
             this.closeButton.Name = "closeButton";
             this.closeButton.Size = new System.Drawing.Size(94, 40);
             this.closeButton.TabIndex = 5;
@@ -123,11 +127,31 @@
             this.closeButton.UseVisualStyleBackColor = true;
             this.closeButton.Click += new System.EventHandler(this.closeForm);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.DimGray;
+            this.label4.Location = new System.Drawing.Point(27, 126);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(41, 26);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Tip";
+            // 
+            // tipTextBox
+            // 
+            this.tipTextBox.BackColor = System.Drawing.Color.LightGray;
+            this.tipTextBox.Enabled = false;
+            this.tipTextBox.Location = new System.Drawing.Point(173, 126);
+            this.tipTextBox.Name = "tipTextBox";
+            this.tipTextBox.ReadOnly = true;
+            this.tipTextBox.Size = new System.Drawing.Size(100, 32);
+            this.tipTextBox.TabIndex = 5;
+            // 
             // TipsterResults
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(378, 302);
+            this.ClientSize = new System.Drawing.Size(378, 336);
             this.Controls.Add(this.closeButton);
             this.Controls.Add(this.personTextBox);
             this.Controls.Add(this.label3);
@@ -154,5 +178,7 @@
         private System.Windows.Forms.Button closeButton;
         public System.Windows.Forms.TextBox peopleTextBox;
         public System.Windows.Forms.TextBox billTextBox;
+        public System.Windows.Forms.TextBox tipTextBox;
+        private System.Windows.Forms.Label label4;
     }
 }

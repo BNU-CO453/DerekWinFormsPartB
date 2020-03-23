@@ -12,9 +12,13 @@ namespace DerekWindowsFormsApp.Unit4
 {
     public partial class TipsterResults : Form
     {
-        private decimal billTotal, tip, perPerson;
+        private decimal billTotal, perPerson;
 
         private int noPeople;
+
+        private decimal tipAmount;
+
+        public decimal Tip { get;  set; }
 
         public TipsterResults()
         {
@@ -26,8 +30,14 @@ namespace DerekWindowsFormsApp.Unit4
             try
             {
                 billTotal = Convert.ToDecimal(billTextBox.Text);
+
+                tipAmount = (billTotal * Tip);
+                tipTextBox.Text = tipAmount.ToString("£0.00");
+
+                
                 noPeople = Convert.ToInt32(peopleTextBox.Text);
-                perPerson = billTotal / noPeople;
+
+                perPerson = (billTotal + tipAmount) / noPeople;
                 personTextBox.Text = perPerson.ToString("£0.00");
             }
             catch (Exception)

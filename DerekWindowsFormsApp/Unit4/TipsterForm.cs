@@ -29,6 +29,23 @@ namespace DerekWindowsFormsApp.Unit4
             results.billTextBox.Text = billTextBox.Text;
             results.peopleTextBox.Text = peopleNumericUpDown.Value.ToString();
 
+            if(noneRadioButton.Checked)
+            {
+                results.Tip = 0;
+            }
+            else if(normalRadioButton.Checked)
+            {
+                results.Tip = 0.10m;
+            }
+            else if(generousRadioButton.Checked)
+            {
+                results.Tip = 0.20m;
+            }
+            else if(madRadioButton.Checked)
+            {
+                results.Tip = 0.50m;
+            }
+
             results.Show();
             results.calculateBill();
         }
