@@ -30,6 +30,7 @@ namespace DerekWindowsFormsApp.Unit4
             results.peopleTextBox.Text = peopleNumericUpDown.Value.ToString();
 
             results.Show();
+            results.calculateBill();
         }
     }
 }

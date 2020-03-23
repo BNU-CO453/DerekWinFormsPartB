@@ -12,9 +12,29 @@ namespace DerekWindowsFormsApp.Unit4
 {
     public partial class TipsterResults : Form
     {
+        private decimal billTotal, tip, perPerson;
+
+        private int noPeople;
+
         public TipsterResults()
         {
             InitializeComponent();
+        }
+
+        public void calculateBill()
+        {
+            try
+            {
+                billTotal = Convert.ToDecimal(billTextBox.Text);
+                noPeople = Convert.ToInt32(peopleTextBox.Text);
+                perPerson = billTotal / noPeople;
+                personTextBox.Text = perPerson.ToString("£0.00");
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Invalid number!");
+            };   
         }
 
         private void closeForm(object sender, EventArgs e)

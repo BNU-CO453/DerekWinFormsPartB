@@ -34,7 +34,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.personTextBox = new System.Windows.Forms.TextBox();
             this.closeButton = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -103,15 +103,15 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "Each Pays:";
             // 
-            // textBox1
+            // personTextBox
             // 
-            this.textBox1.BackColor = System.Drawing.Color.LightGray;
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(186, 197);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(100, 32);
-            this.textBox1.TabIndex = 4;
+            this.personTextBox.BackColor = System.Drawing.Color.LightGray;
+            this.personTextBox.Enabled = false;
+            this.personTextBox.Location = new System.Drawing.Point(186, 197);
+            this.personTextBox.Name = "personTextBox";
+            this.personTextBox.ReadOnly = true;
+            this.personTextBox.Size = new System.Drawing.Size(100, 32);
+            this.personTextBox.TabIndex = 4;
             // 
             // closeButton
             // 
@@ -129,7 +129,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(378, 302);
             this.Controls.Add(this.closeButton);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.personTextBox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -150,7 +150,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox personTextBox;
         private System.Windows.Forms.Button closeButton;
         public System.Windows.Forms.TextBox peopleTextBox;
         public System.Windows.Forms.TextBox billTextBox;
