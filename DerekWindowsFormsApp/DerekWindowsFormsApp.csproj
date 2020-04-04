@@ -205,6 +205,9 @@
     <Content Include="Images\RPS.jpg" />
     <Content Include="Images\Scissors.jpg" />
     <Content Include="ScreenShots\Ramsay1.jpg" />
+    <Content Include="ScreenShots\T11_1.jpg" />
+    <Content Include="ScreenShots\T13_1.jpg" />
+    <Content Include="ScreenShots\T13_2.jpg" />
     <Content Include="ScreenShots\T14_1.jpg" />
     <Content Include="ScreenShots\T14_2.jpg" />
     <Content Include="ScreenShots\T14_3.jpg" />

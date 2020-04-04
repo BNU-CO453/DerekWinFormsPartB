@@ -20,7 +20,7 @@ namespace DerekWindowsFormsApp
 
             //Application.Run(new MonkeyBash());
             //Application.Run(new PadForm());
-            Application.Run(new TipsterForm());
+            Application.Run(new WelcomeForm());
 
         }
     }
